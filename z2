@@ -20,6 +20,13 @@ window.open("obrazz4.html","okienko","toolbar=no,directories=no,menubar=no,heigh
 <body>
 <form>
 <input type="button" name="przycisk" value="z2" onclick="WinOpen(' ')">
+<input type="button" name="przycisk1" value="Strona 1" onclick="WinOpen_skomra_1(' ')">
+<input type="button" name="przycisk2" value="Strona 2" onclick="WinOpen_skomra_2(' ')">
+<input type="button" name="przycisk3" value="Strona 3" onclick="WinOpen_skomra_3(' ')">
+<input type="button" name="przycisk4" value="Strona 4" onclick="WinOpen_skomra_4(' ')">
+</form>
+</body>
+</html>
 </form>
 </body>
 </html>
