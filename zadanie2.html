@@ -1,35 +1,26 @@
 <html>
-<head>
-<title>zadanie 2 JS</title>
-<script language="JavaScript">
-function WinOpen_skomra_1()
-{
-window.open("obrazz1.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=190,left=190");
-}
-function WinOpen_skomra_2()
-{
-window.open("obrazz2.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-}
-function WinOpen_skomra_3()
-{
-window.open("obrazz3.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-}
-function WinOpen_skomra_4()
-{
-window.open("obrazz4.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
-}
-</script>
-</head>
-<body>
-<form>
-<input type="button" name="przycisk" value="z2" onclick="WinOpen(' ')">
-<input type="button" name="przycisk1" value="Strona 1" onclick="WinOpen_skomra_1(' ')">
-<input type="button" name="przycisk2" value="Strona 2" onclick="WinOpen_skomra_2(' ')">
-<input type="button" name="przycisk3" value="Strona 3" onclick="WinOpen_skomra_3(' ')">
-<input type="button" name="przycisk4" value="Strona 4" onclick="WinOpen_skomra_4(' ')">
-</form>
-</body>
+  <head>
+  <script language="JavaScript">
+  function zamknij_skomra(){
+  window.close();
+  
+  }
+    
+    function obraz1_skomra()
+    {
+    window.open("zdj1.html","okienko","toolbar=no,menubar=no,directories=no,height=150,width=100;left=123,top=300");
+    }
+    
+    </script>
+  </head>
+    <body>
+
+    <form>
+    <input type="button" name="guzik" value="obraz 1" onclick="obraz1_skomra('')"> 
+    </form> 
+      
+    </body>
+  
+  
 </html>
-</form>
-</body>
-</html>
+
