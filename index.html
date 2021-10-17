@@ -1,26 +1,84 @@
 <html>
- <head>
- <title>zadanie nr 1 JS</title>
- <script language="JavaScript">
- function WinOpen_skomra_1() 
- {
+<head>
+<title>Przykład nr 1 ? </title>
+<script language="JavaScript">
+function WinOpen_skomra()
+{
 window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
- }
- function WinOpen_skomra_2()
- {
-window.open("zadanie2.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=190");
- }
- function WinOpen_skomra_3()
- {
- window.open("zadanie3.html","okienko3","toolbar=no,directories=no,menubar=no,height=250,width=250,top=900,left=100"); 
- }
- </script>
- </head>
+}
+
+    function Zad2_skomra()
+    {
+  window.open("obrazy.html","okienko","toolbar=no,menubar=no,directories=no,height=200,width=620,top=650,left=150");
+    }
+    
+    function Zad3_skomra()
+    {
+  window.open("z3.html","okienko","toolbar=no,menubar=no,directories=no,height=200,width=620,top=650,left=150");
+    }
+    
+    function zad4_skomra() 
+    { 
+   alert("Uwaga!");
+    } 
+    
+    function zad5_skomra() 
+ { 
+ var r=confirm("Naciśnij klawisz"); 
+ if (r==true) 
+ { document.write("Nacisnąłeś OK!"); } 
+ else 
+ { document.write("Nacisnąłeś Cancel!"); } 
+ } 
+    
+    function zad6_skomra() 
+ { 
+ var name=prompt("Napisz imię","Imię Nazwisko"); 
+ if (name!=null && name!="") 
+ { 
+ document.write("Witaj " + name + "! jak się masz?"); 
+ } 
+ } 
+    
+    function zad8_skomra()
+    {
+     window.open("skomra_z8.html", "zad8", "toolbar=no, menubar=no, directories=no");   
+    }
+    
+    function zad7_skomra()
+    {
+    window.open("skomra_z7.html","zad7","toolbar=no,menubar=no,directories=no");
+    }
+    
+        function zad15_skomra()
+    {
+    window.open("z15_skomra.html","zad15","toolbar=no,menubar=no,directories=no");
+    }
+</script>
+
+<style> 
+body {size: 20px; font-weight: bolder; background-color: beige; color: black; }
+
+p {size: 2cm; font-weight: bolder; }
+
+</style>
+
+  </head>
+  
 <body>
- <form>
- <input type="button" name="przycisk" value="z1" onclick="WinOpen_skomra_1(' ')">
- <input type="button" name="przycisk2" value="z2" onclick="WinOpen_skomra_2(' ')">
- <input type="button" name="przycisk3" value="z3" onclick="WinOpen_skomra_3(' ')"> 
- </form>
+<p><h1> Skomra <h1></p>
+  <form> <br>
+  <input type="button" name="przycisk" value="z1" onclick="WinOpen_skomra(' ')">
+  <input type="button" name="zadanie2" value="z2" onclick="Zad2_Skomra(' ')">
+  <br>
+  <input type="button" name="przycisk3" value="Skomra-z3" onclick="Zad3_skomra(' ')">
+  <input type="button" name="przycisk4" value="Skomra-z4" onclick="zad4_skomra(' ')">
+  <input type="button" name="przycisk5" value="Skomra-z5" onclick="zad5_skomra(' ')">
+    <input type="button" name="przycisk6" value="Skomra-z6" onclick="zad6_skomra(' ')">
+      <input type="button" name="przycisk7" value="Skomra-z7" onclick="zad7_skomra(' ')">
+      <input type="button" name="przycisk8" value="Skomra-z8" onclick="zad8_skomra(' ')">
+      <input type="button" name="przycisk15" value="Skomra-z15" onclick="zad15_skomra(' ')">
+
+  </form>
 </body>
 </html>
