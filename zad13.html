@@ -1,0 +1,35 @@
+<html>
+<title> zdanie 10 skomra</title>
+
+<head>
+
+
+
+</head>
+
+<body>
+<div style="font-size:50px; color:rgb(75, 73, 73)">    
+<script language="JavaScript">
+
+var x = prompt("A = ","");
+var y = prompt("B = ","");
+
+var a=parseFloat(x);
+var b=parseFloat(y);
+
+var aek = Math.pow(a, 3);
+var bek = 3*(Math.pow(a, b))*b;
+var dek = 3*(a*(Math.pow(b, b)));
+var fek = Math.pow(b,3);
+var suma=aek+bek+dek+fek;
+document.write("Wczytane liczby: \nA="+a+"\nB="+b+"<br>"); 
+document.write("("+a+"+"+b+")"+"^3 = "+a+"^3"+"3*(("+a+")^"+b+") + 3*("+a+")*(("+b+")^"+b+") + "+b+"^3 = "+aek+"+"+bek+"+"+dek+"+"+fek+" = "+suma);
+
+</script>
+
+</div>
+
+</body>
+
+
+</html>
