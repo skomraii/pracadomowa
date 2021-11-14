@@ -1,0 +1,46 @@
+<html>
+<title> zadanie 9 skomra</title>
+<head>
+
+
+</head>
+
+
+<body>
+<div style="font-size: 49px; color: green;">
+    <script language ="JavaScript">
+
+var d1 = prompt("Dzien 1: ", "");
+var d2 = prompt("Dzien 2: ", "");
+
+var g1 = prompt("godzina dnia 1: ", "");
+var g2 = prompt("godzina dnia 2: ", "");
+
+var sumad1;
+var sumad2;
+var sekundy;
+
+var a1 =parseFloat(d1);
+var a2=parseFloat(d2);
+
+var b1=parseFloat(g1);
+var b2=parseFloat(g2);
+
+sumad1 = a1*86400 + b1*3600;
+sumad2 = a2*86400 + b2*3600;
+
+sekundy=sumad2-sumad1;
+
+document.write("Ilosc sekund: "+sekundy);
+
+
+
+    </script>
+</div>
+
+
+
+</body>
+
+
+</html>

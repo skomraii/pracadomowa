@@ -1,0 +1,33 @@
+<html>
+
+    <head>    
+        <title> Użycie fukcji </title>    
+        <meta charset="utf-8">   
+   </head>  
+<body> 
+        <div style="color:navy;font-size:50px;"> 
+           <script language="JavaScript"> 
+                var a=parseFloat(prompt("a=","")); 
+                var b=parseFloat(prompt("b=","")); 
+
+               function suma_lub(a, b) { 
+                      return a + b; 
+                } 
+                function odejmowanie_lub(a,b){
+                    return a - b;
+
+
+                }
+                function mnozenie_lub(a ,b){
+                    return a*b;
+                } 
+                function od_kwadratu_lub(a,b){
+                    return Math.pow(a,2);
+                    return Math.pow(b,2);
+
+                }
+             document.write("suma="+suma_lub(a,b)+"<br>"+"różnica="+odejmowanie_lub(a,b)+"<br>"+"Iloczyn="+mnozenie_lub(a,b)+"<br>"+"Kwadraty="+od_kwadratu_lub(a)+" i "+od_kwadratu_lub(b)); 
+
+</script> 
+</div> 
+</body>
