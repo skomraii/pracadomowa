@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>
+Obliczanie dlugosci drabiny i alfy
+</title>
+ <script language="JavaScript">
+function drabina_laskowska(x,d)
+{
+ x_las=parseFloat(x)
+ d_las=parseFloat(d)
+ drabina_b=Math.pow(x_las,2)+Math.pow(d_las,2)
+ drabina_wynik=Math.sqrt(drabina_b)
+ document.getElementsByName('drabina_tr')[0].value=drabina_wynik.toFixed(2); /* na dokument */
+ alert("Drabina="+drabina_wynik.toFixed(2)+" m"); /*do okna Alert */
+ pokaz1.innerHTML="Drabina="+drabina_wynik.toFixed(2)+"m"+"<br>"; /* do tabeli */
+}
+function alfa_laskowska(x,d)
+{
+ x_las=parseFloat(x)
+ d_las=parseFloat(d)
+ alfa_wy=Math.atan(d_las/x_las)
+ alfa_wynik=180*alfa_wy/Math.PI
+ document.getElementsByName('alfa_tr')[0].value=alfa_wynik.toFixed(2);
+ alert("alfa="+alfa_wynik.toFixed(2)+"stopni");
+ pokaz2.innerHTML="alfa="+alfa_wynik.toFixed(2)+"stopni";
+}
+ </script>
+ </head>
+<body>
+<script type="text/javascript">
+function okno_zamknij_skomra21()
+{
+window.close()
+}
+</script>
+Obliczanie dlugosci drabiny i alfy
+<br> <br>
+<form name="formularz" action="..." onsubmit="drabina_laskowska(this.wysokosc.value,this.dlugosc.value);
+alfa_laskowska(this.wysokosc.value,this.dlugosc.value);return false">
+Podaj x=
+<input size="6" name="wysokosc">
+Podaj d=
+<input size="6" name="dlugosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="drabina_tr">
+alfa=
+<input size="6" name="alfa_tr">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_skomra21()"/>
+</body>
+</html>
