@@ -1,0 +1,46 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_skomra15()
+{
+window.close()
+}
+</script>
+<div style="color:black;font-size:40px;">
+ <script language="JavaScript">
+var x1_las=prompt("Podaj x1=","");
+var x2_las=prompt("Podaj x2=","");
+ var x1=parseFloat(x1_las);
+ var x2=parseFloat(x2_las);
+var y1;
+var y2;
+var y3;
+var y4;
+var y5;
+y1=3*Math.pow(x1, (6/(6+2)));
+y2=(2*Math.cos(x1*Math.PI/180))+(2* Math.sin(x1*Math.PI/180));
+y3= Math.cbrt(Math.pow(x1,5)+(2* Math.pow(x2,4)));
+y4= Math.abs(x1-x2);
+y5=y3*y4;
+
+ </script><script language="JavaScript">
+document.write("wczyatne liczby: x1="+x1+" x2="+x2+"");
+</script><br><script language="JavaScript">
+document.write("y1= "+y1.toFixed(2)+"");
+</script><br>
+<script language="JavaScript">
+document.write("y2= "+y2.toFixed(2)+"");
+</script><br>
+<script language="JavaScript">
+document.write("y3= "+y3.toFixed(2)+"");
+</script><br>
+<script language="JavaScript">
+document.write("y4= "+y4.toFixed(2)+"");
+</script><br>
+<script language="JavaScript">
+document.write("y5= "+y5.toFixed(2)+"");
+</script><br>
+</div><br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_skomra15()"/>
+</body>
+</html>
