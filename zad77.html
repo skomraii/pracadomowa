@@ -6,14 +6,18 @@
     <script language="JavaScript">
       var liczba1=prompt("R=","");
       var R=parseFloat(liczba1);
+      var licznik_sko=0;
       for ( var i=1; i<=R; j++)
       {
         for ( var j=1; j<=R; j++)
         {
+          d=Math.sqrt(i*i+j*j);
+          if(d<=R){licznik_sko++;}
           document.write("("+i+" , "+j+)"+"  ");
                          }
         document.write("<br>);
                        }
+                         document.write("N="+licznik_sko+"  ");
     </script>
   </head>
   <body>
