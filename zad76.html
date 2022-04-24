@@ -1,0 +1,39 @@
+<html>
+<body>
+<script type="text/javascript">
+function okno_zamknij_Laskowska53()
+{
+window.close()
+}
+</script>
+<script language="JavaScript">
+var x=prompt("podaj liczbÄ™ A=","");
+var y=prompt("podaj liczbÄ™ B=","");
+a=parseInt(x);
+b=parseInt(y);
+aa=a;
+bb=b;
+if(a<b)
+{
+	for(a=aa;a<=b;a++)
+	{
+	if (a%2!=0) 
+	document.write("<font size=6 color=green>"+a+"<br>");
+	}
+}
+if (a>b)
+{
+	for(a=aa;a>=b;a--)
+	{
+	if (a%2!=0) 
+	document.write("<font size=3 color=blue>"+a+"<br>");
+	}
+}
+if (a==b)
+{
+confirm("Brak obliczen ");
+}
+</script>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Laskowska53()"/>
+</body>
+</html>
