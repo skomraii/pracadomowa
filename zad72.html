@@ -1,0 +1,48 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+ <script language="JavaScript">
+ var l1_t_luk=prompt("Podaj liczbÄ™ z przedziaÅ‚u od 20 do 60: ","");
+ var l2_t_luk=prompt("Podaj liczbÄ™ z przedziaÅ‚u od 20 do 60: ","");
+ var a=parseFloat(l1_t_luk);
+ var b=parseFloat(l2_t_luk);
+ var pocz_luk=prompt("Podaj poczÄ…tkowÄ… wielkoÅ›Ä‡ tekstu");
+ var p=parseFloat(pocz_luk);
+ const tekst_luk=prompt("Podaj dowolny tekst: ","");
+ 
+if (a>60 || a<20)
+{
+	document.write("pierwsza liczba nie naleÅ¼y do przedziaÅ‚u <20,60>");
+}
+
+if (b>60 || b<20)
+{
+	document.write("druga liczba nie naleÅ¼y do przedziaÅ‚u <20,60>");
+}
+
+else
+{
+	if (a>b) // zwieksza
+	{
+		for (i=p;i<100;i=i+5)
+		{
+		document.write("<p style=\"font-size:"+i+"px; color: black;\">"+tekst_luk+"<br></p>");
+		}
+	}
+
+	if (b>a) //zmniejsza
+	{
+		for (i=p;i>0;i=i-5)
+		{
+		document.write("<p style=\"font-size:"+i+"px; color: black;\">"+tekst_luk+"<br></p>");
+		}
+	}
+}
+ </script>
+
+</body>
+</html>
